@@ -1,4 +1,5 @@
 //Find largest number in a given array - Linear Search
+
 package Arrays.LinearSearch;
 public class largestNumber {
     public static int Largest(int numbers[]) {
@@ -16,3 +17,5 @@ public class largestNumber {
         System.out.println("Largest value is :" + Largest(numbers));
     }
 }
+
+// Time Complexity - O(n)

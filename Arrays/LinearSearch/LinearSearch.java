@@ -1,3 +1,4 @@
+//Linear Search - find the index of element in a given array.
 //Find the index of element in a given arrays - Linear Search.
 
 package Arrays.LinearSearch;
@@ -25,3 +26,6 @@ public class LinearSearch {
         }
     }
 }
+
+// Time Complexity - O(n)
+//O(n) - you ask each friends one by one if they have a pen.
