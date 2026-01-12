@@ -1,0 +1,31 @@
+//Given a route countining 4 directions(E,W,N,S),find the shortest path to reach destination
+
+package Arrays2D.Strings;
+
+public class ShortestPath {
+    public static float getShortestPath(String path) {
+        int x = 0, y = 0;
+        for (int i = 0; i < path.length(); i++) {
+            char dir = path.charAt(i);
+            if (dir == 's') {
+                y--;
+            } else if (dir == 'N') {
+                y++;
+            } else if (dir == 'W') {
+                x--;
+            } else if (dir == 'E') {
+                x++;
+            }
+        }
+        int x2 = x * x;
+        int y2 = y * y;
+        return (float) Math.sqrt(x2 + y2);
+    }
+
+    public static void main(String[] args) {
+        String path = "WNEENESENNN";
+        System.out.println("Shortest path to reach destination : " + getShortestPath(path));
+    }
+}
+
+//Shortest path to reach destination : 5.8309517
