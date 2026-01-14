@@ -1,6 +1,6 @@
 //String Concatenate - add two strings
 
-package Arrays2D.Strings;
+package Strings;
 
 public class Concatenate {
     public static void main(String[] args) {

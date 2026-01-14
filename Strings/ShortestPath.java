@@ -1,6 +1,6 @@
 //Given a route countining 4 directions(E,W,N,S),find the shortest path to reach destination
 
-package Arrays2D.Strings;
+package Strings;
 
 public class ShortestPath {
     public static float getShortestPath(String path) {

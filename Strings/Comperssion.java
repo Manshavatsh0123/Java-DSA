@@ -1,6 +1,6 @@
 //String Compression
 
-package Arrays2D.Strings;
+package Strings;
 public class Comperssion {
     public static String compress(String str) {
         StringBuilder result = new StringBuilder();

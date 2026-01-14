@@ -1,6 +1,6 @@
 //For a given set of Strings ,print the largest strings.
 
-package Arrays2D.Strings;
+package Strings;
 
 public class LargestString {
     public static void main(String[] args) {

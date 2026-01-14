@@ -1,6 +1,6 @@
 //String - an object that represents an immutable sequence of characters.
 
-package Arrays2D.Strings;
+package Strings;
 import java.util.Scanner;
 
 public class InputString {

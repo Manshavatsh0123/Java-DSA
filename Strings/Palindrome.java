@@ -1,6 +1,6 @@
 //Palindrome - a sequence of characters that reads the same forwards and backward. (IMP)
 
-package Arrays2D.Strings;
+package Strings;
 public class Palindrome {
 
     public static boolean isPalindrome(String str) {

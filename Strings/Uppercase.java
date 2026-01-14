@@ -1,6 +1,6 @@
 //String Builder - is a part of java.lang.package that provide a mutable sequence of character.
 
-package Arrays2D.Strings;
+package Strings;
 public class Uppercase {
 
     public static String toUpperCase(String str) {
