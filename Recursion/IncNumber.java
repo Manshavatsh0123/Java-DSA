@@ -1,0 +1,32 @@
+//Print number from 1 to n.
+package Recursion;
+
+public class IncNumber {
+
+    public static void printInc(int n) {
+        if (n == 1) {
+            System.out.println(1);
+            return;
+        }
+        printInc(n - 1);    
+        System.out.println(n);
+    }
+
+    public static void main(String[] args) {
+        int n = 10;
+        printInc(n);
+    }
+}
+
+
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+// 10
+
