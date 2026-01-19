@@ -4,7 +4,7 @@ package Recursion;
 public class IncNumber {
 
     public static void printInc(int n) {
-        if (n == 1) {
+        if (n == 1) { //base case
             System.out.println(1);
             return;
         }

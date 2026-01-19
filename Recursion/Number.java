@@ -6,7 +6,7 @@ package Recursion;
 
 public class Number {
     public static void printDec(int n) {
-        if (n == 1) {
+        if (n == 1) {  //base case
             System.out.println(n);
             return;
         }
