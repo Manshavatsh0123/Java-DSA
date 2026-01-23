@@ -15,11 +15,12 @@ public class MergeSort {
         mergeSort(arr, si, mid);// left part
         mergeSort(arr, mid + 1, ei);// right part
 
-        merge(arr, si, mid, ei);// merge two sorted arrays
+        merge(arr, si, mid, ei);// merge two sorted arrays - O(n)
     }
 
-    // Merge two sorted arrays
+    // Merge two sorted arrays - O(n) Time Complexity and O(n) Space Complexity
     public static void merge(int[] arr, int si, int mid, int ei) {
+
         int temp[] = new int[ei - si + 1];
         int i = si; // pointer for left part
         int j = mid + 1;// pointer for right part
@@ -62,3 +63,5 @@ public class MergeSort {
 }
 
 //6 3 9 5 2 8 
+
+//Time Complexity: O(n log n)

@@ -15,3 +15,8 @@ public class Sum {
 }
 
 // 15
+
+//Total work done = n X k = O(n) [where k is constant time for addition operation]
+//Time Complexity = O(n)
+
+//Space Complexity = O(n) [due to recursive call stack]

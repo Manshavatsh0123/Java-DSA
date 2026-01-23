@@ -19,3 +19,6 @@ public class FibonacciNumber {
     }
 }
 
+//Time Complexity: O(2^n) - Exponential time complexity due to the binary tree of calls.
+//Space Complexity: O(n) - The maximum depth of the recursion stack.
+
