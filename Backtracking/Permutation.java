@@ -1,0 +1,32 @@
+package Backtracking;
+
+public class Permutation {
+    public static void findPermutation(String str, String ans) {
+        // Base case
+        if (str.length() == 0) {
+            System.out.println(ans);
+            return;
+        }
+
+        for (int i = 0; i < str.length(); i++) {
+            char curr = str.charAt(i);
+            String newStr = str.substring(0, i) + str.substring(i + 1);
+            findPermutation(newStr, ans + curr);
+        }
+    }
+
+    public static void main(String[] args) {
+        String str = "abc";
+        findPermutation(str, "");
+    }
+}
+
+// abc
+// acb
+// bac
+// bca
+// cab
+// cba
+
+// Time Complexity: O(n! * n) where n is the length of the string
+// Space Complexity: O(n) for the recursion stack
