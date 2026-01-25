@@ -1,7 +1,7 @@
 //Find & print all the subsets of a given set using backtracking
 //abc -> "", a, b, c, ab, ac, bc, abc
 
-package Backtracking;
+//package Backtracking;
 
 public class Subset {
     public static void findsubsets(String str, String ans, int i) {
