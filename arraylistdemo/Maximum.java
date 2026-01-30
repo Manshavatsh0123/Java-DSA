@@ -1,4 +1,4 @@
-package ArrayList;
+package arraylistdemo;
 import java.util.ArrayList;
 
 public class Maximum {
