@@ -1,6 +1,7 @@
 package Linkedlist;
 
-public class Basic {
+public class MiddleAdd {
+
     // Node class
     class Node {
         int data;
@@ -10,7 +11,7 @@ public class Basic {
             this.data = data;
             this.next = null;
         }
-    } 
+    }
 
     // Head of Linked List
     Node head;
@@ -20,6 +21,30 @@ public class Basic {
         Node newNode = new Node(data);
         newNode.next = head;
         head = newNode;
+    }
+
+    public void add(int idx, int data) {
+        if (idx == 0) {
+            addFirst(data);
+            return;
+        }
+
+        Node newNode = new Node(data);
+        Node temp = head;
+        int i = 0;
+
+        while (i < idx - 1 && temp != null) {
+            temp = temp.next;
+            i++;
+        }
+
+        if (temp == null) {
+            System.out.println("Index out of bounds");
+            return;
+        }
+
+        newNode.next = temp.next;
+        temp.next = newNode;
     }
 
     // Print Linked List
@@ -37,8 +62,9 @@ public class Basic {
         System.out.println("null");
     }
 
-    public static void main(String[] args) {
-        Basic ll = new Basic();
+    public static void main(String args[]) {
+        MiddleAdd ll = new MiddleAdd();   
+
         ll.print();
 
         ll.addFirst(1);
@@ -52,6 +78,9 @@ public class Basic {
 
         ll.addFirst(4);
         ll.print();
+
+        ll.add(2, 99);   
+        ll.print();
     }
 }
 
@@ -60,3 +89,4 @@ public class Basic {
 // 2 -> 1 -> null
 // 3 -> 2 -> 1 -> null
 // 4 -> 3 -> 2 -> 1 -> null
+// 4 -> 3 -> 99 -> 2 -> 1 -> null
