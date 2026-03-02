@@ -1,4 +1,4 @@
-package Strings;
+package TCSNQT;
 
 public class CycleLL {
     public static class Node {
