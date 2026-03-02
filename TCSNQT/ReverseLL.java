@@ -1,11 +1,10 @@
 package TCSNQT;
 
-public class LLInsert {
-    public static class Node {
+public class ReverseLL {
+    public static class Node{
         int data;
         Node next;
-
-        public Node(int data) {
+        public Node(int data){
             this.data = data;
             this.next = null;
         }
@@ -39,42 +38,6 @@ public class LLInsert {
         tail = newNode;
     }
 
-    public static int removeFirst() {
-        if (size == 0) {
-            System.out.println("LL is empty");
-            return Integer.MIN_VALUE;
-        }
-
-        int val = head.data;
-        if (size == 1) {
-            head = tail = null;
-        } else {
-            head = head.next;
-        }
-        size--;
-        return val;
-    }
-
-    public static int removeLast() {
-        if (size == 0) {
-            System.out.println("LL is empty");
-            return Integer.MIN_VALUE;
-        } else if (size == 1) {
-            int val = head.data;
-            head = tail = null;
-            size = 0;
-            return val;
-        }
-        Node prev = head;
-        for (int i = 0; i < size - 2; i++) {
-            prev = prev.next;
-        }
-        int val = prev.next.data;
-        prev.next = null;
-        size--;
-        return val;
-    }
-
     public void print() {
         if (head == null) {
             System.out.println("LL is empty");
@@ -88,8 +51,23 @@ public class LLInsert {
         System.out.println("null");
     }
 
-    public static void main(String[] args) {
-        LLInsert ll = new LLInsert();
+    public void reverse(){
+        Node prev = null;
+        Node curr = tail = head;
+        Node next;
+
+        while(curr != null ){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
+
+
+    public static void main(String[] args){
+      ReverseLL ll = new ReverseLL();
 
         ll.addFirst(1);
         ll.addFirst(2);
@@ -98,10 +76,7 @@ public class LLInsert {
 
         ll.print();
         System.out.println("Size of LL:" + ll.size);
-        // removeFirst();
-        // ll.print();
-
-        removeLast();
+        ll.reverse();
         ll.print();
     }
 }
