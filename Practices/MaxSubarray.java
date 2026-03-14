@@ -7,8 +7,8 @@ public class MaxSubarray {
         int max = arr[0];
         int sum = 0;
 
-        for (int num : arr) {
-            sum += num;
+        for (int i = 0; i < arr.length; i++) {
+            sum += i;
 
             max = Math.max(max, sum);
             if (sum < 0) {
